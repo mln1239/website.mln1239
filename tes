@@ -1,2 +1,44 @@
-<title\> youtube clicker-1 <title\>
-<button\> youtube clicker-1 <button\>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>website.mln1239</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ff0000;
+      color: white;
+      text-align: center;
+      padding-top: 50px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #969696;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>welcome to website.mln1239</h1>
+  <p>Click count:</p>
+  <h2 id="count">0</h2>
+
+  <button onclick="add()">CLICK</button>
+
+  <script>
+    let count = 0;
+
+    function add() {
+      count++;
+      document.getElementById("count").innerText = count;
+    }
+  </script>
+
+</body>
+</html>
